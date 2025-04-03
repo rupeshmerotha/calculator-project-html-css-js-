@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button" onclick="
+            currVal+='7'
+            document.querySelector('#display').innerText=currVal;    
+            ">7</button>
+
+            <button class="button" onclick="
+            currVal+='8'
+            document.querySelector('#display').innerText=currVal;    
+            ">8</button>
+
+            <button class="button" onclick="
+            currVal+='9'
+            document.querySelector('#display').innerText=currVal;    
+            ">9</button>
+
+            <button class="button operator" onclick="
+            currVal+='/'
+            document.querySelector('#display').innerText=currVal;    
+            ">/</button>
+
+            <button class="button" onclick="
+            currVal+='4'
+            document.querySelector('#display').innerText=currVal;    
+            ">4</button>
+
+            <button class="button" onclick="
+            currVal+='5'
+            document.querySelector('#display').innerText=currVal;    
+            ">5</button>
+
+            <button class="button" onclick="
+            currVal+='7'
+            document.querySelector('#display').innerText=currVal;    
+            ">6</button>
+
+            <button class="button operator" onclick="
+            currVal+='*'
+            document.querySelector('#display').innerText=currVal;    
+            ">*</button>
+
+            <button class="button" onclick="
+            currVal+='1'
+            document.querySelector('#display').innerText=currVal;    
+            ">1</button>
+
+            <button class="button" onclick="
+            currVal+='2'
+            document.querySelector('#display').innerText=currVal;    
+            ">2</button>
+
+            <button class="button" onclick="
+            currVal+='3'
+            document.querySelector('#display').innerText=currVal;    
+            ">3</button>
+
+            <button class="button operator" onclick="
+            currVal+='-'
+            document.querySelector('#display').innerText=currVal;    
+            ">-</button>
+
+            <button class="button" onclick="
+            currVal+='0'
+            document.querySelector('#display').innerText=currVal;    
+            ">0</button>
+
+            <button class="button" onclick="
+            currVal+='.'
+            document.querySelector('#display').innerText=currVal;    
+            ">.</button>
+
+            <button class="button equal" onclick="
+            let result=eval(currVal);
+            currVal=result;
+            document.querySelector('#display').innerText=currVal;    
+            ">=</button>
+
+            <button class="button operator" onclick="
+            currVal+='+'
+            document.querySelector('#display').innerText=currVal;    
+            ">+</button>
+
+            <button id="clear" onclick="
+            currVal=''
+            document.querySelector('#display').innerText=currVal;    
+            ">Clear</button>
+        </div>
+    </div>
+
+
+    <script>
+        let currVal='';
+        document.querySelector('#display').innerText=currVal;
+    </script>
+</body>
+</html>
